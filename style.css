@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Inter', sans-serif;
+}
+
+button {
+    background: none;
+    border: none;
+}
+
+a {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--second-color);
+}
+
+:root {
+    --primary-color: rgb(255,255,255);
+    --second-color: rgb(0,0,0);
+    --wrepper-color: rgba(255, 255, 255, 0.5);
+    --wrepper-border: rgb(235, 238, 241);
+}
+
+body {
+        /*z-index: -1;
+        opacity: 0.4;*/
+        background: radial-gradient(
+            circle at top right,
+            rgba(250, 0, 255, 1) 0%,
+            rgba(255, 199, 0, 1) 52%,
+            rgba(128, 255, 0, 1) 100%
+        );
+
+    /*background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);*/
+}
+
+nav {
+    display: flex;
+    
+    height: 64px;
+
+    position: fixed;
+    top: 0;
+    margin-top: 25px;
+
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+}
+
+/*nav::before{
+    content: '';
+    width: 100%;
+    height: 30rem;
+
+    position: absolute;
+    top: 0;
+
+    background: var(--wrepper-color);
+    backdrop-filter: blur(10px);
+
+    border-radius: 30px;
+
+    z-index: -1;
+}*/
+
+.wrapper {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-inline: 2rem;
+}
+
+nav.scroll {
+
+    background: var(--wrepper-color);
+    border: 1px solid var(--wrepper-border);
+    border-radius: 72px;
+
+    backdrop-filter: blur(10px);
+
+    z-index: 2;
+}
+
+nav.width {
+    max-width: calc(764px);
+    width: calc(100% - 12px);
+}
+
+
+nav.scroll svg path:nth-child(1) {
+    fill: #ffffff;
+}
+
+nav.scroll svg path:nth-child(2) {
+    fill: #ffffff;
+}
+
+nav.scroll svg path:nth-child(3) {
+    fill: #ffffff;
+}
+
+nav.scroll svg:nth-child(1) path {
+    stroke: #ffffff;
+}
+
+nav .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+header::before {
+    content: '';
+
+    width: 100px;
+    height: 100px;
+
+    position: absolute;
+    border-radius: 50%;
+
+    top: 80px;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+
+    background: var(--primary-color);
+    border: 3px solid var(--second-color);
+
+    z-index: -1;
+}
+
+.icon_perfil {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+
+    margin-top: 230px;
+}
+
+h1 {
+    font-size: 15px;
+}
+
+.scroll-tolls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.assets {
+    position: absolute;
+    left: 50%;
+
+    transform: translateX(-50%);
+}
+
+.tool {
+    position: relative;
+
+    max-width: calc(764px);
+    width: calc(100% - 12px);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 300px;
+}
+
+img {
+    width: 310px;
+    height: 350px;
+}
+
+main {
+    width: 100%;
+    max-width: calc(764px);
+
+    display: flex;
+    flex-direction: column;
+    /* === LIMITE DOS BOTÕES === */
+    /* margin-block: 200px 50px; */
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-inline: 1rem;
+}
+
+main .links {
+    text-align: center;
+    line-height: 53px;
+}
+
+.links-button {
+    background: var(--primary-color);
+    margin: 50px 0 50px 0;
+    height: 53px;
+
+    cursor: pointer;
+    border-radius: 72px;
+
+    list-style: none;
+}
+
+@keyframes  li {
+
+    0% {
+        transform: rotate(0);
+    }
+    25% {
+        transform: rotate(5deg);
+    }
+    50% {
+        transform: rotate(0);
+    }
+    75% {
+        transform: rotate(-3deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}   
+
+li:hover {
+    animation: li .25s linear infinite;
+    animation-name: li;
+    animation-delay: .50s;
+    animation-duration: 1%;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+}
+
+.whatsapp {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+
+    background: none;
+    border: none;
+}
