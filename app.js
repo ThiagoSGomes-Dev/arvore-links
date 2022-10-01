@@ -48,9 +48,9 @@ function showIt2() {document.getElementById("msg1").style.visibility = "visible"
 function share(){
 	if (navigator.share !== undefined) {
 		navigator.share({
-			title: 'O título da sua página',
-			text: 'Um texto de resumo',
-			url: 'https://seusite.com/sua_url',
+			title: 'O link da sua página',
+			text: 'Thiago Desenvolvedor Front-End',
+			url: 'https://thiagosgomes-dev.github.io/arvore-links/',
 		})
 		.then(() => console.log('Successful share'))
 		.catch((error) => console.log('Error sharing', error));
