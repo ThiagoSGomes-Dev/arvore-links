@@ -250,3 +250,40 @@ li:hover {
     background: none;
     border: none;
 }
+
+#msg1 {
+    width: 100px; 
+    height: 32px;  
+
+    background: #fff; 
+    color: #000; 
+
+    position: fixed; 
+    right: 65px;
+    bottom: 90px; 
+
+    text-align: center;  
+    line-height: 31px; 
+    
+    font-size: 15px;
+    border-radius: 10px; 
+    
+    visibility: visible;
+    z-index: 100;
+}
+
+#msg1::before {
+    content: '';
+    position: absolute;
+    
+    left: 50px;
+
+    border-top-right-radius: 10px;
+
+    border-top: 21px solid #fff;
+    border-right: 25px solid #fff;
+    border-left: 25px solid transparent;
+    border-bottom: 20px solid transparent;
+
+    z-index: -1;
+}
