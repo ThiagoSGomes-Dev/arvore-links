@@ -97,6 +97,10 @@ nav.scroll svg path:nth-child(1) {
     fill: #ffffff;
 }
 
+nav.scroll .uno path:nth-child(1) {
+    fill: #000;
+}
+
 nav.scroll svg path:nth-child(2) {
     fill: #ffffff;
 }
@@ -112,6 +116,7 @@ nav.scroll svg:nth-child(1) path {
 nav .wrapper {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 nav button {
