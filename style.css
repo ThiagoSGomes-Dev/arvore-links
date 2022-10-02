@@ -26,14 +26,17 @@ a {
 }
 
 body {
+
+    background-image: -webkit-linear-gradient(990deg, rgb(42, 35, 67) 20%, rgb(27, 31, 36) 70%);
+
         /*z-index: -1;
         opacity: 0.4;*/
-        background: radial-gradient(
+        /* background: radial-gradient(
             circle at top right,
             rgba(250, 0, 255, 1) 0%,
             rgba(255, 199, 0, 1) 52%,
             rgba(128, 255, 0, 1) 100%
-        );
+        ); */
 
     /*background: rgb(238,174,202);
     background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);*/
@@ -101,6 +104,10 @@ nav.scroll .uno path:nth-child(1) {
     fill: #000;
 }
 
+nav.scroll .uno path:nth-child(2) {
+    fill: #000;
+}
+
 nav.scroll svg path:nth-child(2) {
     fill: #ffffff;
 }
@@ -112,6 +119,11 @@ nav.scroll svg path:nth-child(3) {
 nav.scroll svg:nth-child(1) path {
     stroke: #ffffff;
 }
+
+nav.scroll .uno path:nth-child(1) {
+    stroke: #fff;
+}
+
 
 nav .wrapper {
     display: flex;
@@ -140,7 +152,7 @@ header::before {
     transform: translateX(-50%);
 
     background: var(--primary-color);
-    border: 3px solid var(--second-color);
+    border: 3px solid #8300f5;
 
     z-index: -1;
 }
@@ -156,6 +168,10 @@ header::before {
 
 h1 {
     font-size: 15px;
+}
+
+h1, p {
+    color: #8300f5;
 }
 
 .scroll-tolls {
@@ -237,6 +253,10 @@ main .links {
         transform: rotate(0);
     }
 }   
+
+li {
+    border: 3px solid #8300f5;
+}
 
 li:hover {
     animation: li .25s linear infinite;

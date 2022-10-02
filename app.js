@@ -11,31 +11,31 @@ function onScroll() {
 
 // ====== CANVAS POSTCARD ======
 
-let end = Date.now() + (15 * 1000);
+// let end = Date.now() + (15 * 1000);
 
-// go Buckeyes!
-let colors = ['#f71da3', '#ffff00', '#02fe99'];
+// // go Buckeyes!
+// let colors = ['#f71da3', '#ffff00', '#02fe99'];
 
-(function frame() {
-confetti({
-    particleCount: 3,
-    angle: 60,
-    spread: 55,
-    origin: { x: 0 },
-    colors: colors
-});
-confetti({
-    particleCount: 3,
-    angle: 120,
-    spread: 55,
-    origin: { x: 1 },
-    colors: colors
-});
+// (function frame() {
+// confetti({
+//     particleCount: 3,
+//     angle: 60,
+//     spread: 55,
+//     origin: { x: 0 },
+//     colors: colors
+// });
+// confetti({
+//     particleCount: 3,
+//     angle: 120,
+//     spread: 55,
+//     origin: { x: 1 },
+//     colors: colors
+// });
 
-if (Date.now() < end) {
-    requestAnimationFrame(frame);
-}
-}());
+// if (Date.now() < end) {
+//     requestAnimationFrame(frame);
+// }
+// }());
 
 // ====== CANVAS POSTCARD ======
 
