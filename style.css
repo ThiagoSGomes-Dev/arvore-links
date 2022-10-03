@@ -76,7 +76,7 @@ nav {
     width: 100%;
     margin-right: auto;
     margin-left: auto;
-    padding-inline: 2rem;
+    padding-inline: 1rem;
 }
 
 nav.scroll {
@@ -95,11 +95,6 @@ nav.width {
     width: calc(100% - 12px);
 }
 
-
-nav.scroll svg path:nth-child(1) {
-    fill: #ffffff;
-}
-
 nav.scroll .uno path:nth-child(1) {
     fill: #000;
 }
@@ -108,12 +103,8 @@ nav.scroll .uno path:nth-child(2) {
     fill: #000;
 }
 
-nav.scroll svg path:nth-child(2) {
-    fill: #ffffff;
-}
-
-nav.scroll svg path:nth-child(3) {
-    fill: #ffffff;
+nav.scroll svg path:nth-child(1) {
+    fill: #000;
 }
 
 nav.scroll svg:nth-child(1) path {
@@ -121,7 +112,7 @@ nav.scroll svg:nth-child(1) path {
 }
 
 nav.scroll .uno path:nth-child(1) {
-    stroke: #fff;
+    stroke: #ffffff;
 }
 
 
